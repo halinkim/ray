@@ -1,8 +1,18 @@
+//
+// Created by halin on 2023-09-18.
+//
+
 #include <iostream>
 #include <fstream>
 #include "vec.h"
+#include "ray.h"
 
+vec ray_color(ray r) {
+    vec unit_direction = unit_vector(r.direction());
+    double a = 0.5*(unit_direction.z() + 1.0);
 
+    return (1.0-a)*vec(1.0, 1.0, 1.0) + a*vec(0.5, 0.7, 1.0);
+}
 
 int main() {
     /*
@@ -35,30 +45,30 @@ int main() {
      * Camera Setting.
      */
     vec camera_pos(0, 0, 0);
-    vec focal_length(1.0, 0, 0);
+    vec focal_length(1, 0, 0);
     vec camera_angle(0, 0, 1);
     vec view_proj = camera_angle - dot(focal_length, camera_angle) / focal_length.lensq() * focal_length;
 
     vec pix_dv = -unit_vector(view_proj) * viewport_height / image_height;
     vec pix_du = unit_vector(cross(pix_dv, focal_length)) * viewport_width / image_width;
-//    vec pix_du = vec(viewport_width / image_width, 0, 0);
-//    vec pix_dv = vec(viewport_height / image_height, 0, 0);
     vec pix0 = focal_length - pix_du * image_width / 2 - pix_dv * image_height / 2;
 
+    std::cout << "pix_du:\t" << pix_du[0] << '\t' << pix_du[1] << '\t' << pix_du[2] << '\n';
+    std::cout << "pix_dv:\t" << pix_dv[0] << '\t' << pix_dv[1] << '\t' << pix_dv[2] << '\n';
 
+    /*
+     * Image Processing.
+     */
     for (int j = 0; j < image_height; ++j) {
         std::cout << "\rProcessing.. " << j + 1 << " of " << image_height << std::flush;
         for (int i = 0; i < image_width; ++i) {
             vec pix = pix0 + ((i + 0.5) * pix_du) + ((j + 0.5) * pix_dv);
 
+            vec rgb = ray_color(ray(camera_pos, pix));
 
-            auto r = double(i) / (image_width-1);
-            auto g = double(j) / (image_height-1);
-            auto b = 0;
-
-            int ir = static_cast<int>(255.999 * r);
-            int ig = static_cast<int>(255.999 * g);
-            int ib = static_cast<int>(255.999 * b);
+            int ir = static_cast<int>(255.999 * rgb[0]);
+            int ig = static_cast<int>(255.999 * rgb[1]);
+            int ib = static_cast<int>(255.999 * rgb[2]);
 
             fout << ir << ' ' << ig << ' ' << ib << '\n';
         }

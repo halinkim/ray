@@ -1,5 +1,9 @@
-#ifndef VEC
-#define VEC
+//
+// Created by halin on 2023-09-18.
+//
+
+#ifndef RAY_VEC_H
+#define RAY_VEC_H
 #include <cmath>
 class vec {
 public:

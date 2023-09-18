@@ -55,12 +55,6 @@ build CMakeFiles/ray.dir/main.cpp.obj: CXX_COMPILER__ray_unscanned_Debug C$:/Use
   OBJECT_DIR = CMakeFiles\ray.dir
   OBJECT_FILE_DIR = CMakeFiles\ray.dir
 
-build CMakeFiles/ray.dir/test.cpp.obj: CXX_COMPILER__ray_unscanned_Debug C$:/Users/halin/CLionProjects/ray/test.cpp || cmake_object_order_depends_target_ray
-  DEP_FILE = CMakeFiles\ray.dir\test.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\ray.dir
-  OBJECT_FILE_DIR = CMakeFiles\ray.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ray
@@ -69,7 +63,7 @@ build CMakeFiles/ray.dir/test.cpp.obj: CXX_COMPILER__ray_unscanned_Debug C$:/Use
 #############################################
 # Link the executable ray.exe
 
-build ray.exe: CXX_EXECUTABLE_LINKER__ray_Debug CMakeFiles/ray.dir/main.cpp.obj CMakeFiles/ray.dir/test.cpp.obj
+build ray.exe: CXX_EXECUTABLE_LINKER__ray_Debug CMakeFiles/ray.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ray.dir
