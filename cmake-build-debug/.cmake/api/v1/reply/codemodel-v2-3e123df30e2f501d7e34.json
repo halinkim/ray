@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.26"
+						"string" : "3.23"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ray::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ray-Debug-9168bc5b0034595fd2b9.json",
+					"jsonFile" : "target-ray-Debug-30b03b893b0152ce7672.json",
 					"name" : "ray",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/halin/CLionProjects/ray/cmake-build-debug",
-		"source" : "C:/Users/halin/CLionProjects/ray"
+		"build" : "C:/Users/halin/Documents/GitHub/ray/cmake-build-debug",
+		"source" : "C:/Users/halin/Documents/GitHub/ray"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 4
 	}
 }

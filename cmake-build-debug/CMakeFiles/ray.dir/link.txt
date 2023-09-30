@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ray.dir/objects.a
+"C:\PROGRA~1\JETBRA~1\CLion 2022.2.3\bin\mingw\bin\ar.exe" qc CMakeFiles\ray.dir/objects.a @CMakeFiles\ray.dir\objects1.rsp
+"C:\PROGRA~1\JETBRA~1\CLion 2022.2.3\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\ray.dir/objects.a -Wl,--no-whole-archive -o ray.exe -Wl,--out-implib,libray.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ray.dir\linklibs.rsp
