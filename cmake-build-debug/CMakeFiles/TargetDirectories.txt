@@ -1,3 +1,3 @@
-C:/Users/halin/CLionProjects/ray/cmake-build-debug/CMakeFiles/ray.dir
-C:/Users/halin/CLionProjects/ray/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/halin/CLionProjects/ray/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+//wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug/CMakeFiles/ray.dir
+//wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug/CMakeFiles/edit_cache.dir
+//wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug/CMakeFiles/rebuild_cache.dir
