@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:/Users/halin/Documents/GitHub/ray/cmake-build-debug/CMakeFiles/ray.dir
 C:/Users/halin/Documents/GitHub/ray/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/halin/Documents/GitHub/ray/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+//wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug/CMakeFiles/ray.dir
+//wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug/CMakeFiles/edit_cache.dir
+//wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> 09031e072437702da4caca5583a5422f80dfffee

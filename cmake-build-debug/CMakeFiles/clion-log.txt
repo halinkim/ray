@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\halin\Documents\GitHub\ray -B C:\Users\halin\Documents\GitHub\ray\cmake-build-debug
+=======
+"C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S \\wsl.localhost\Ubuntu\home\halin\halinkim\ray -B \\wsl.localhost\Ubuntu\home\halin\halinkim\ray\cmake-build-debug
+>>>>>>> 09031e072437702da4caca5583a5422f80dfffee
 -- The C compiler identification is GNU 11.2.0
 -- The CXX compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
@@ -13,4 +17,8 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
+<<<<<<< HEAD
 -- Build files have been written to: C:/Users/halin/Documents/GitHub/ray/cmake-build-debug
+=======
+-- Build files have been written to: //wsl.localhost/Ubuntu/home/halin/halinkim/ray/cmake-build-debug
+>>>>>>> 09031e072437702da4caca5583a5422f80dfffee
